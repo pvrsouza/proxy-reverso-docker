@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  # http://fiplan-struts.localhost:8080 -> dockerhost:8081
+  # http://fiplan-spring.localhost:8080 -> dockerhost:8082
+  proxy:
+    image: nginx:alpine
+    ports:
+      - 8080:80
+      #- 443:443
+    volumes:
+      - ./confs/nginx.conf:/etc/nginx/nginx.conf:ro
