@@ -18,3 +18,9 @@ Acessar os dois:
 
 Comandos 
 	docker exec {CONTAINER_ID} nginx -s reload
+
+
+VUE.JS:
+
+Configurar o package.json:
+	"serve": "vue-cli-service serve --port 5000",
